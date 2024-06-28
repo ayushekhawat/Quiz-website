@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url('https://i.pinimg.com/564x/64/32/1c/64321cdac4369c8e28e7379a16f9eb4c.jpg');
+    background-position: center;
+    background-size: cover;
+    
+   
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1800px;
+    margin: 0 auto;
+    
+    background-size: cover;
+    background-position: center;
+    width: 200%;
+    height:50px;
+
+}
+
+.navbar .logo {
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 20px;
+
+}
+
+.navbar .logo span {
+    color: #009688;
+}
+
+.navbar .menulinks {
+    display: flex;
+    gap: 40px;
+    text-transform: uppercase;
+    
+}
+
+.navbar a {
+    color: rgb(243, 237, 237);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #009688;
+}
+
+.main .active{
+    filter:blur(15px);
+    
+}
+
+ 
+.hero-section .content{
+    text-align: center;
+    color: antiquewhite;
+    width: 100%;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    color: aliceblue;
+}
+
+.hero-section .content h1{
+    width: 100%;
+    position: absolute;
+    top:0%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    color: rgb(242, 243, 243);
+    font-size: 3rem;
+   
+    margin-top: 300px;
+}
+
+.hero-section .content p{
+    margin: 20px auto;
+    font-weight: 200;
+    line-height: 35px;
+    margin-top: 350px;
+    font-size: 20px;
+}
+
+
+
+button{
+    width:200px;
+    padding: 15px 0;
+    text-align: center ;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    margin-top: 25px;
+    color: aliceblue;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+    position:relative;
+    overflow:hidden;
+}
+ span{
+    background: #009688;
+    height:100%;
+    width:0;
+    border-radius: 25px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width:100%;
+}
+
+button:hover {
+    border:none;
+} 
+
+
+@media screen and (max-width: 850px) {
+    .container {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+
+
+    
